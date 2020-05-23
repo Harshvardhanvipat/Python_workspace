@@ -11,3 +11,5 @@ password_length = len(password)
 password_length = '*' * password_length
 
 print(f"Hey {user_name}, your password length is {password_length}")
+
+# basically very basic program
