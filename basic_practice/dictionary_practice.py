@@ -25,13 +25,13 @@ if is_australia_a_country and is_test:
 
 # Logical operators 
 
-print(4>5)
-print(4<5)
-print(4==5) # == is used to check and = is used to assign a value
-print(4>=5)
-print(4<=5)
-print(4 != 5)
-print(not(True))
+# print(4>5)
+# print(4<5)
+# print(4==5) # == is used to check and = is used to assign a value
+# print(4>=5)
+# print(4<=5)
+# print(4 != 5)
+# print(not(True))
 
 
 is_magician = True
@@ -40,13 +40,79 @@ is_expert = True
 # check if magician and expert : "Print you are an master magician"
 # 
 
-if is_magician and is_expert:
-    print("You are a master magician")
+# if is_magician and is_expert:
+#     print("You are a master magician")
 
-elif is_magician == True:
-    if is_expert == False:
-        print("Atleast you are getting there")
+# elif is_magician == True:
+#     if is_expert == False:
+#         print("Atleast you are getting there")
 
-elif is_magician == False:
-    print("You need magical power")
+# elif is_magician == False:
+#     print("You need magical power")
 
+ # == checks for equality 
+print(True == 1) #true
+print(""==1) #false
+print([] ==1) #false
+print(10 == 10.0) #true
+print([] == []) # true 
+
+# iterables
+
+# user = {
+#     'name': 'Golem',
+#     'age' : 5005,
+#     'can_swim' : False
+# }
+
+# for item in user.items():
+#     print(item)
+
+# for item in user.values():
+#     print(item)
+
+# for item in user.keys():
+#     print(item)
+
+#counter 
+
+# my_list = [1,2,3,4,5,6,7,8,9,10]
+# total_of_list = 0
+# for item in my_list:
+#     total_of_list += item
+# print(total_of_list)
+
+# range function 
+
+# picture = [
+#     [0,0,0,0,0,0,1,0,0,0],
+#     [0,0,0,0,0,0,1,0,0,0],
+#     [0,0,0,0,0,0,1,0,0,0],
+#     [0,0,0,0,0,0,1,0,0,0],
+#     [0,0,0,0,0,0,1,0,0,0],
+#     [0,0,0,1,0,0,0,0,0,0]
+# ]
+
+# for itemss in picture:
+#     for value_of_list in itemss:
+#         if value_of_list == 0:
+#             print(" ",end=" ")
+#         else:
+#             print("*",end=" ")
+#     print("\n")
+
+# find the duplicates 
+some_list = ['a','b','c','d','e','d','m','n','m']
+
+duplicates = []
+for unit in some_list:
+    if some_list.count(unit) > 1:
+        if unit not in duplicates:
+            duplicates.append(unit)
+
+print(duplicates)
+
+def say_hello():
+    print('Hello ! what are you doing ??')
+
+say_hello()
