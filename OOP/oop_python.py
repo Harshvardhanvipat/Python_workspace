@@ -3,12 +3,14 @@
 # structured code and modularized code
 # class name are Camel Case
 
-class BigObject:  # Class
-    pass
+class PlayerCharacter:
+    def __init__(self, name):  # constructor
+        self.name = name
+
+    def run(self):
+        print('run')
 
 
-obj1 = BigObject()  # instanciate
+player1 = PlayerCharacter('test')
 
-# created a object of BigObject
-print(type(obj1))
-# checking the class type of the object
+print(player1.name)
