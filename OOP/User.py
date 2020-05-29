@@ -43,3 +43,28 @@ class D(B, C):
 
 
 print(D.mro())
+
+
+# what is functional programming ?
+# seperation of concern and also seperate - data and - function
+
+# Pure functions
+# [1,2,3] ----- > function (input) ------> [output]
+# same input should give same output
+# function should not generate any side effects, i.e. it should not change the outside world
+
+# pure function
+# the below function is a pure function
+def multiple_by_2(li):
+    new_list = []
+    for item in li:
+        new_list.append(item*2)
+    return new_list
+
+# the above function does create the same results for same input
+# the above function doesnot change or has any side affects the outside world, thus it is a pure function
+
+# in place if it had a print statement in the function it would affect the outside world, and secondly if the list is global thus it work and change the list outside the function scope, thus it would conflict the statement of a pure function
+
+
+print(multiple_by_2([1, 2, 3, 4]))  # example of a pure function
