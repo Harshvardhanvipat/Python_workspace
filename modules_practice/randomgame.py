@@ -13,6 +13,7 @@ def run_guess(guess, answer):
             return True
     else:
         print('Hey I said 1 - 10 ')
+        return False
 
 
 if __name__ == '__main__':
