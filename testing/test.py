@@ -47,3 +47,5 @@ if __name__ == '__main__':
 # to get more detailed output you can do :
 # python3 -m unittest -v
 # -v stands for verbose, which provides more details about the test
+
+# setUp and tearDown are used to setup the variable or environments before testing and teardown is used to clean up the setUp and other required things
